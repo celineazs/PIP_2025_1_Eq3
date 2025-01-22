@@ -18,7 +18,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             a = int(self.txt_A.text())
             b = int(self.txt_B.text())
             r = a+b
-            self.msj("La suma es: " + str(r))
+            self.msj("La suma es:" + str(r))
         except Exception as error:
             print(error)
 
