@@ -6,8 +6,8 @@ Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def _init_(self):
-        QtWidgets.QMainWindow._init_(self)
-        Ui_MainWindow._init_(self)
+        QtWidgets.QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)
         self.setupUi(self)
         # Area de los Signals
         self.btn_cargar.clicked.connect(self.cargar)
