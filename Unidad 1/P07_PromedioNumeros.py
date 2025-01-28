@@ -5,33 +5,42 @@ Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
-    def __init__(self):
-        QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+    def _init_(self):
+        QtWidgets.QMainWindow._init_(self)
+        Ui_MainWindow._init_(self)
         self.setupUi(self)
         # Area de los Signals
         self.btn_cargar.clicked.connect(self.cargar)
         self.btn_agregar.clicked.connect(self.agregar)
         self.btn_guardar.clicked.connect(self.guardar)
         self.calificaciones = []
+        self.banderaCalif = False
     #Area de los Slots
 
     def cargar(self):
+        if not self.banderaCalif:
         ## EJERCICIO 10 --- TAREA comprobar si el archivo existe
-        archivo = open("../Archivos/calificaciones.csv")
-        contenido = archivo.readlines()
-        datos = [int(x) for x in contenido]
-        ## Ejercicio 11 --- EN LUGAR DE SOBREESCRIBIR CONCATENAR
-        print(datos)
-        self.calificaciones = datos
-        self.promedio()
-        ## EJERCICIO 12 --- ASEGURARSE QUE SOLO SE PUEDE CARGAR HASTA ANTES DE
-        # AGREGAR LA PRIMERA CALIFICACION ---> ENABLES Y/O/ CODIGO
+            try:
+                archivo = open("../Archivos/calificaciones.csv")
+                contenido = archivo.readlines()
+                datos = [int(x) for x in contenido]
+                ## Ejercicio 11 --- EN LUGAR DE SOBREESCRIBIR CONCATENAR
+                print(datos)
+                self.calificaciones.extend(datos)
+                self.promedio()
+            except FileNotFoundError:
+                self.msj("No existe el archivo")
+        else:
+            self.msj("Ya se cargaron las calificaciones")
+            ## EJERCICIO 12 --- ASEGURARSE QUE SOLO SE PUEDE CARGAR HASTA ANTES DE
+            # AGREGAR LA PRIMERA CALIFICACION ---> ENABLES Y/O/ CODIGO
 
     def agregar(self):
         calificacion = int(self.txt_calificacion.text())
         self.calificaciones.append(calificacion)
         self.promedio()
+        self.banderaCalif = True
+        self.btn_cargar.setEnabled(False)
 
     def promedio(self):
         prom = sum(self.calificaciones) / len(self.calificaciones)
@@ -50,7 +59,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             m.setText(txt)
             m.exec_()
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     app = QtWidgets.QApplication(sys.argv)
     window= MyApp()
     window.show()
