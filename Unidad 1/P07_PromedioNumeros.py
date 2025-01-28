@@ -59,7 +59,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             m.setText(txt)
             m.exec_()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     window= MyApp()
     window.show()
