@@ -1,9 +1,13 @@
 <RCC>
   <qresource prefix="logos">
+    <file>facultad.png</file>
+    <file>uat.png</file>
+    <file>equipo.png</file>
     <file>Jungkook.jpg</file>
     <file>Finalizada.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
+    <file>equipo3.jpeg</file>
     <file>Urgente.png</file>
   </qresource>
 </RCC>
