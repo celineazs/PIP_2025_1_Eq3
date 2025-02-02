@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>Jungkook.jpg</file>
+    <file>Finalizada.jpg</file>
+  </qresource>
+  <qresource prefix="Ejercicios">
+    <file>Urgente.png</file>
+  </qresource>
+</RCC>

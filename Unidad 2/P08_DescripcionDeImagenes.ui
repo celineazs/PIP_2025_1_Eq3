@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>380</y>
+      <width>191</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/Jungkook.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>0</y>
+      <width>161</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/Ejercicios/Urgente.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>161</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/Finalizada.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nombre:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_nombre">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>90</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="selectorImagen">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>440</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>191</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/Jungkook.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_edad">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>170</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Edad:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_grupo">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>350</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>300</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Grupo de Kpop:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>923</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../Archivos/Resources/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
