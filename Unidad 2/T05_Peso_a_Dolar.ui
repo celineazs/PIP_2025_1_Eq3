@@ -7,63 +7,65 @@
     <x>0</x>
     <y>0</y>
     <width>634</width>
-    <height>551</height>
+    <height>559</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Conversor de Peso a Dólar</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 233, 248);</string>
+   <string notr="true">
+background-color: rgb(221, 237, 183);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>135</y>
-      <width>121</width>
+      <x>100</x>
+      <y>180</y>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Snap ITC</family>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
+      <family>Microsoft PhagsPa</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Snap ITC&quot;;</string>
+     <string notr="true">
+font: 75 16pt &quot;Microsoft PhagsPa&quot;;</string>
     </property>
     <property name="text">
-     <string>Metros</string>
+     <string>Peso MXN</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_convertir">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>310</y>
+      <x>370</x>
+      <y>270</y>
       <width>241</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Snap ITC</family>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
+      <family>Microsoft PhagsPa</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 30px;
-background-color: rgb(83, 136, 94);
-font: 12pt &quot;Snap ITC&quot;;
+     <string notr="true">border-radius: 10px;
+font: 75 16pt &quot;Microsoft PhagsPa&quot;;
+background-color: rgb(13, 146, 119);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
@@ -73,8 +75,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="txt_valor">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>170</y>
+      <x>50</x>
+      <y>220</y>
       <width>241</width>
       <height>61</height>
      </rect>
@@ -86,13 +88,13 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:20px;</string>
+border-radius:10px;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>100</x>
       <y>390</y>
       <width>131</width>
       <height>31</height>
@@ -100,24 +102,24 @@ border-radius:20px;</string>
     </property>
     <property name="font">
      <font>
-      <family>Snap ITC</family>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
+      <family>Microsoft PhagsPa</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Snap ITC&quot;;</string>
+     <string notr="true">font: 75 16pt &quot;Microsoft PhagsPa&quot;;</string>
     </property>
     <property name="text">
-     <string>Kilómetros</string>
+     <string>Dolar USD</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_Kilometros">
+   <widget class="QLineEdit" name="txt_resultado">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>50</x>
       <y>430</y>
       <width>241</width>
       <height>61</height>
@@ -129,9 +131,8 @@ border-radius:20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(205, 131, 168);
-
-border-radius:20px;</string>
+     <string notr="true">background-color: rgb(249, 153, 115);
+border-radius:10px;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -172,10 +173,10 @@ border-radius:20px;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>430</x>
       <y>360</y>
       <width>201</width>
       <height>191</height>
@@ -194,14 +195,11 @@ border-radius:20px;</string>
    <widget class="QSlider" name="horizontalSlider">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>250</y>
-      <width>241</width>
-      <height>41</height>
+      <x>50</x>
+      <y>330</y>
+      <width>231</width>
+      <height>22</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(236, 153, 175);</string>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
