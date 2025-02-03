@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets, QtGui
-qtCreatorFile = "T03_Mililitros_alitros.ui"
+qtCreatorFile = "T03_Mililitros_a_litros.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -22,7 +22,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         value_ml = self.verticalSlider.value()
         self.txt_valor.setText(f"{value_ml} ml")
 
-    def convierte(self):
+    def convertir(self):
         value_ml = self.verticalSlider.value()
         value_l = value_ml / 1000
         self.txt_litros.setText(f"{value_l:.2f} L")
