@@ -7,7 +7,7 @@
     <file>Finalizada.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
-    <file>equipo3.jpeg</file>
     <file>Urgente.png</file>
+    <file>equipo3.jpeg</file>
   </qresource>
 </RCC>

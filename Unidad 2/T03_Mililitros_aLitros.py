@@ -7,11 +7,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
-        self.verticalSlider.setMinimum(0)  # Mínimo en mililitros
-        self.verticalSlider.setMaximum(5000)  # Máximo en mililitros (5 litros)
-        self.verticalSlider.setSingleStep(100)  # Paso de 100 ml
-        self.verticalSlider.setValue(0)  # Valor inicial
-
+        self.verticalSlider.setMinimum(0)
+        self.verticalSlider.setMaximum(5000)
+        self.verticalSlider.setSingleStep(100)
+        self.verticalSlider.setValue(0)
         self.verticalSlider.valueChanged.connect(self.cambiaValor)
         self.txt_valor.setText("0 ml")
         self.txt_litros.setText("0.00 L")
