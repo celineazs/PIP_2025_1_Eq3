@@ -207,7 +207,7 @@ border-radius:20px;</string>
      <string>Grupo de Kpop:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lbl_foto">
+   <widget class="QLabel" name="imagen_descripcion">
     <property name="geometry">
      <rect>
       <x>30</x>
