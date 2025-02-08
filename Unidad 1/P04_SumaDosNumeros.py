@@ -4,7 +4,6 @@ qtCreatorFile = "P04_SumaDosNumeros.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
-
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
@@ -22,8 +21,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         except Exception as error:
             print(error)
 
-        # Area de los Slots
-
+    # Area de los Slots
     def msj (self, txt):
             m = QtWidgets.QMessageBox()
             m.setText(txt)

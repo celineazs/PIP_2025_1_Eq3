@@ -16,7 +16,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.calificaciones = []
         self.banderaCalif = False
     #Area de los Slots
-
     def cargar(self):
         if not self.banderaCalif:
         ## EJERCICIO 10 --- TAREA comprobar si el archivo existe

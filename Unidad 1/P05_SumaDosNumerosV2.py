@@ -25,8 +25,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         except Exception as error:
             print(error)
 
-        # Area de los Slots
-
+    # Area de los Slots
     def msj (self, txt):
             m = QtWidgets.QMessageBox()
             m.setText(txt)
