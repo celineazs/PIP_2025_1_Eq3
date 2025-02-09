@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>923</width>
+    <width>846</width>
     <height>609</height>
    </rect>
   </property>
@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>330</y>
-      <width>241</width>
-      <height>221</height>
+      <x>640</x>
+      <y>410</y>
+      <width>221</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -42,7 +42,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>750</x>
+      <x>670</x>
       <y>0</y>
       <width>161</width>
       <height>181</height>
@@ -65,7 +65,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
+      <y>0</y>
       <width>221</width>
       <height>131</height>
      </rect>
@@ -120,20 +120,20 @@
 border-radius:20px;</string>
     </property>
    </widget>
-   <widget class="QSlider" name="selectorImagen">
+   <widget class="QSlider" name="SelectorImagen">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>440</y>
-      <width>160</width>
-      <height>22</height>
+      <y>480</y>
+      <width>191</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_edad">
+   <widget class="QLineEdit" name="txt_color">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -167,13 +167,13 @@ border-radius:20px;</string>
      </font>
     </property>
     <property name="text">
-     <string>Edad:</string>
+     <string>Color:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_grupo">
+   <widget class="QLineEdit" name="txt_forma">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>350</y>
       <width>311</width>
       <height>61</height>
@@ -204,23 +204,61 @@ border-radius:20px;</string>
      </font>
     </property>
     <property name="text">
-     <string>Grupo de Kpop:</string>
+     <string>Forma:</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_foto">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>280</y>
-      <width>161</width>
-      <height>111</height>
+      <y>170</y>
+      <width>151</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/Finalizada.jpg</pixmap>
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/Ejercicios/koya.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/Ejercicios/cooky.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>200</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/Ejercicios/rj.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -232,7 +270,7 @@ border-radius:20px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>923</width>
+     <width>846</width>
      <height>26</height>
     </rect>
    </property>

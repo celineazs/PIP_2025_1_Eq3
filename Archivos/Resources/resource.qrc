@@ -7,6 +7,16 @@
     <file>Finalizada.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
+    <file>chimmy.jpg</file>
+    <file>cooky.jpg</file>
+    <file>koya.jpg</file>
+    <file>tata.jpg</file>
+    <file>rj.jpg</file>
+    <file>capitan.jpg</file>
+    <file>batman.jpg</file>
+    <file>flash.jpg</file>
+    <file>spiderman.jpg</file>
+    <file>superman.jpg</file>
     <file>Urgente.png</file>
     <file>equipo3.jpeg</file>
   </qresource>

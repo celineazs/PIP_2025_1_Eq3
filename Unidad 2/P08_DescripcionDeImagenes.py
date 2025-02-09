@@ -7,32 +7,34 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
-        self.selectorImagen.setMinimum(1)
-        self.selectorImagen.setMaximum(1)
-        self.selectorImagen.setSingleStep(1)
-        self.selectorImagen.setValue(1) #valor inicial
-        self.selectorImagen.valueChanged.connect(self.cambiaValor)
-        #self.txt_valor.setText("1")
+        # Area de los signals
+        self.SelectorImagen.valueChanged.connect(self.cambiaValor)
+        self.SelectorImagen.setMinimum(1)
+        self.SelectorImagen.setMaximum(1)
+        self.SelectorImagen.setSingleStep(1)
+        self.SelectorImagen.setValue(1)
 
         self.diccionarDatos = {
-            0: ("C:\PIP_2025_1_Eq3\Archivos\Resources\Finalizada.png", ["Puño", "5 dedos", "BTS"])
+            0: (":/Archivos/Resources/koya.jpg", ["Koya", "azul", "koala"]),
+            1: (":/Archivos/Resources/cooky.jpg", ["Cooky", "rosa", "conejo"]),
+            2: (":/Archivos/Resources/rj.jpg", ["Rj", "blanco", "alpaca"])
         }
         self.indice = 0
         self.obtenerDatos()
 
 
     def cambiaValor(self):
-        pass
+        value = self.SelectorImagen.value()
         #value=self.selectorImagen.value()
         #self.txt_valor.setText(str(value))
 
     def obtenerDatos(self):
         nombre =self.diccionarDatos[self.indice][1][0]
-        edad =self.diccionarDatos[self.indice][1][1]
-        grupo =self.diccionarDatos[self.indice][1][2]
+        color =self.diccionarDatos[self.indice][1][1]
+        forma =self.diccionarDatos[self.indice][1][2]
         self.txt_nombre.setText(nombre)
-        self.txt_edad.setText(edad)
-        self.txt_grupo.setText(grupo)
+        self.txt_color.setText(color)
+        self.txt_forma.setText(forma)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

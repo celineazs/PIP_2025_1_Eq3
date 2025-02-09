@@ -7,36 +7,34 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
-        self.selectorImagen.setMinimum(1)
-        self.selectorImagen.setMaximum(3)
-        self.selectorImagen.setSingleStep(1)
-        self.selectorImagen.setValue(1) #valor inicial
-        self.selectorImagen.valueChanged.connect(self.cambiaValor)
-        #self.txt_valor.setText("1")
+        #Area de los signals
+        self.SelectorImagen.setMinimum(1)
+        self.SelectorImagen.setMaximum(3)
+        self.SelectorImagen.setSingleStep(1)
+        self.SelectorImagen.setValue(1)
+        self.SelectorImagen.valueChanged.connect(self.cambiaValor)
 
         self.diccionarDatos = {
-            1: ("C:\PIP_2025_1_Eq3\Archivos\Resources\Finalizada.png", ["Puño", "5 dedos", "BTS"]),
-            2: ("C:\PIP_2025_1_Eq3\Archivos\Resources\Jungkook.jpg", ["Mano", "5 dedos", "BTS"]),
-            3: ("C:\PIP_2025_1_Eq3\Archivos\Resources\Finalizada.png", ["Manopla", "5 dedos", "BTS"])
-
+            1: (":/Archivos/Resources/koya.jpg", ["Koya", "azul", "koala"]),
+            2: (":/Archivos/Resources/cooky.jpg", ["Cooky", "rosa", "conejo"]),
+            3: (":/Archivos/Resources/rj.jpg", ["Rj", "blanco", "alpaca"])
         }
         self.indice = 1
         self.obtenerDatos()
 
 
     def cambiaValor(self):
-        self.indice =self.selectorImagen.value()
-        self.ObtenerDatos()
-        #self.txt_valor.setText(str(value))
+        self.indice = self.SelectorImagen.value()
+        self.obtenerDatos()
 
 
     def obtenerDatos(self):
         nombre =self.diccionarDatos[self.indice][1][0]
-        edad =self.diccionarDatos[self.indice][1][1]
-        grupo =self.diccionarDatos[self.indice][1][2]
+        color =self.diccionarDatos[self.indice][1][1]
+        forma =self.diccionarDatos[self.indice][1][2]
         self.txt_nombre.setText(nombre)
-        self.txt_edad.setText(edad)
-        self.txt_grupo.setText(grupo)
+        self.txt_color.setText(color)
+        self.txt_forma.setText(forma)
         self.imagen_descripcion.setPixmap(QtGui.QPixmap(self.diccionarDatos[self.indice][0]))
 
 if __name__ == "__main__":
