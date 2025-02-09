@@ -147,7 +147,7 @@ border-radius:20px;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -166,7 +166,7 @@ border-radius:20px;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -185,7 +185,7 @@ border-radius:20px;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -222,7 +222,6 @@ border-radius:20px;</string>
  </widget>
  <resources>
   <include location="../Archivos/Resources/resource.qrc"/>
-  <include location="../../Archivos/Resources/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
