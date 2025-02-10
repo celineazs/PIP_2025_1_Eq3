@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="logos">
+    <file>chubby-t-rex_1024.jpeg</file>
+    <file>suchomimus-tenerensis-v0-jsm80tahvjic1.jpeg</file>
     <file>FIT_logo_vertical.png</file>
     <file>log_uat_nuevo.png</file>
     <file>equipo.png</file>
@@ -7,6 +9,11 @@
     <file>Finalizada.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
+    <file>amarillo.png</file>
+    <file>rojo.png</file>
+    <file>verde.png</file>
+    <file>Carcharodontosaurus.jpeg</file>
+    <file>Spinosaurus_aegyptiacus.jpeg</file>
     <file>chimmy.jpg</file>
     <file>cooky.jpg</file>
     <file>koya.jpg</file>
