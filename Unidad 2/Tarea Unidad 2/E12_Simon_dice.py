@@ -23,10 +23,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.btn_4.clicked.connect(self.verificarSeleccion)
 
         self.timer = QtCore.QTimer(self)
-        self.timer.timeout.connect(self.mostrarSiguienteImagen)
+        self.timer.timeout.connect(self.mostrarImagen)
 
         self.patronMemorizado = []
-        self.indice_actual = 0
+        self.imagen_actual = 0
         self.eleccion_usuario = []
 
         self.iniciarJuego()
@@ -35,34 +35,34 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.msj("Memoriza la secuencia de imágenes.")
 
         self.patronMemorizado = [random.randint(1, 4) for _ in range(3)]
-        self.indice_actual = 0
+        self.imagen_actual = 0
         self.eleccion_usuario = []
-        self.habilitarBotones(False)
+        self.Botones(False)
         self.timer.start(1000)
 
-    def mostrarSiguienteImagen(self):
-        if self.indice_actual < len(self.patronMemorizado):
-            img_id = self.patronMemorizado[self.indice_actual]
+    def mostrarImagen(self):
+        if self.imagen_actual < len(self.patronMemorizado):
+            img_id = self.patronMemorizado[self.imagen_actual]
             self.lbl_imagen.setPixmap(QtGui.QPixmap(self.diccionarioDatos[img_id]))
-            self.indice_actual += 1
+            self.imagen_actual += 1
         else:
             self.timer.stop()
             self.msj("Selecciona la secuencia en el orden correcto.")
-            self.habilitarBotones(True)
+            self.Botones(True)
 
     def verificarSeleccion(self):
         boton_presionado = self.sender()
-        boton_a_numero = {
+        boton_numero = {
             self.btn_1: 1,
             self.btn_2: 2,
             self.btn_3: 3,
             self.btn_4: 4
         }
 
-        self.eleccion_usuario.append(boton_a_numero[boton_presionado])
+        self.eleccion_usuario.append(boton_numero[boton_presionado])
 
         if self.eleccion_usuario != self.patronMemorizado[:len(self.eleccion_usuario)]:
-            self.msj("Incorrecto, inténtalo de nuevo.")
+            self.msj("Incorrecto :( , inténtalo de nuevo.")
             self.iniciarJuego()
             return
 
@@ -70,7 +70,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.msj("¡¡Correcto!! Se iniciará un nuevo patrón.")
             self.iniciarJuego()
 
-    def habilitarBotones(self, estado):
+    def Botones(self, estado):
         self.btn_1.setEnabled(estado)
         self.btn_2.setEnabled(estado)
         self.btn_3.setEnabled(estado)
