@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>506</width>
-    <height>624</height>
+    <width>509</width>
+    <height>639</height>
    </rect>
   </property>
   <property name="font">
@@ -106,7 +106,7 @@ color: rgb(255, 255, 255);</string>
      <string>Nuevo juego</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_uno">
+   <widget class="QLineEdit" name="txt_numuno">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -131,7 +131,7 @@ color: rgb(0, 0, 0);
 </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_dos">
+   <widget class="QLineEdit" name="txt_numdos">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -156,7 +156,7 @@ background-color: rgb(248, 201, 221);
 </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_tres">
+   <widget class="QLineEdit" name="txt_numtres">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -181,7 +181,7 @@ background-color: rgb(248, 201, 221);
 </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_resultado">
+   <widget class="QLineEdit" name="txt_intento">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -206,7 +206,7 @@ background-color: rgb(205, 214, 41);
 </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_texto">
+   <widget class="QLineEdit" name="txt_resultado">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -296,7 +296,6 @@ background: transparent;
       <weight>9</weight>
       <italic>false</italic>
       <bold>false</bold>
-      <kerning>true</kerning>
      </font>
     </property>
     <property name="acceptDrops">
@@ -312,7 +311,7 @@ color: rgb(255, 255, 255);</string>
      <string>    Intento</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_jugar">
+   <widget class="QPushButton" name="btn_comprobar">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -327,7 +326,7 @@ font: 75 12pt &quot;Tw Cen MT&quot;;
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Jugar</string>
+     <string>Comprobar</string>
     </property>
    </widget>
   </widget>
@@ -336,7 +335,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>506</width>
+     <width>509</width>
      <height>26</height>
     </rect>
    </property>
@@ -345,7 +344,6 @@ color: rgb(255, 255, 255);</string>
  </widget>
  <resources>
   <include location="../../Archivos/Resources/resource.qrc"/>
-  <include location="../../../Program Files (x86)/Archivos/Resources/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
