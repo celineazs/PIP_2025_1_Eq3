@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 170, 255);</string>
+   <string notr="true">background-color: rgb(255, 216, 167);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -43,9 +43,9 @@
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>-10</y>
+      <y>10</y>
       <width>161</width>
-      <height>181</height>
+      <height>161</height>
      </rect>
     </property>
     <property name="styleSheet">

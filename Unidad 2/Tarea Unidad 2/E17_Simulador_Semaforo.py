@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic, QtWidgets, QtGui
 
-qtCreatorFile = "E17_Simulador_Semaforo.ui"  # Nombre del archivo .ui
+qtCreatorFile = "E17_Simulador_Semaforo.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -18,12 +18,11 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.SelectorImagen.valueChanged.connect(self.cambiaValor)
 
         self.diccionarDatos = {
-            1: ":/Ejercicios/rojo.png",  # Imagen para el semáforo rojo
-            2: ":/Ejercicios/amarillo.png",  # Imagen para el semáforo amarillo
-            3: ":/Ejercicios/verde.png"  # Imagen para el semáforo verde
+            1: ":/Ejercicios/rojo.png",
+            2: ":/Ejercicios/amarillo.png",
+            3: ":/Ejercicios/verde.png"
         }
 
-        # Establecer el valor inicial para cambiar la imagen
         self.cambiaValor()
 
     def cambiaValor(self):

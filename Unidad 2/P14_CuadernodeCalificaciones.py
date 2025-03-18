@@ -1,4 +1,3 @@
-
 archivo = open('../Archivos/Calificacion_con_nombre.csv')
 contenido = archivo.readlines()
 
