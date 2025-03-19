@@ -11,21 +11,18 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        # Lista de imágenes
         self.images = [":Ejercicios/chimmy.jpg", ":Ejercicios/cooky.jpg", ":Ejercicios/spiderman.jpg",
                        ":Ejercicios/superman.jpg", ":Ejercicios/batman.jpg", ":Ejercicios/flash.jpg"] * 2  # Pares
 
-        random.shuffle(self.images)  # Mezclar imágenes
+        random.shuffle(self.images)
 
-        # Lista de botones
         self.buttons = [self.btn_1, self.btn_2, self.btn_3, self.btn_4, self.btn_5, self.btn_6,
                         self.btn_7, self.btn_8, self.btn_9, self.btn_10, self.btn_11, self.btn_12]
 
-        # Asignar imágenes ocultas a cada botón
         self.assigned_images = {}
         for i, button in enumerate(self.buttons):
             self.assigned_images[button] = self.images[i]
-            button.setIcon(QtGui.QIcon(r":Ejercicios/vacio.png"))  # Imagen de reverso
+            button.setIcon(QtGui.QIcon(r":Ejercicios/vacio.png"))
             button.setIconSize(button.size())
             button.clicked.connect(lambda checked, btn=button: self.reveal_card(btn))
 
