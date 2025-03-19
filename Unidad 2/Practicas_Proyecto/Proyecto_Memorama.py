@@ -12,8 +12,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         self.images = [":Ejercicios/chimmy.jpg", ":Ejercicios/cooky.jpg", ":Ejercicios/spiderman.jpg",
-                       ":Ejercicios/superman.jpg", ":Ejercicios/batman.jpg", ":Ejercicios/flash.jpg"] * 2  # Pares
-
+                       ":Ejercicios/superman.jpg", ":Ejercicios/batman.jpg", ":Ejercicios/flash.jpg"] * 2
         random.shuffle(self.images)
 
         self.buttons = [self.btn_1, self.btn_2, self.btn_3, self.btn_4, self.btn_5, self.btn_6,
