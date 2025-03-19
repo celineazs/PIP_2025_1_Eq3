@@ -20,11 +20,17 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.SelectorImagen_2.valueChanged.connect(self.cambiaValor)
         self.btn_and.clicked.connect(self.acciones)
         self.btn_or.clicked.connect(self.acciones)
+        self.btn_nand.clicked.connect(self.acciones)
+        self.btn_nor.clicked.connect(self.acciones)
+        self.btn_xor.clicked.connect(self.acciones)
+        self.btn_xnor.clicked.connect(self.acciones)
+        self.btn_notA.clicked.connect(self.acciones)
+        self.btn_notB.clicked.connect(self.acciones)
 
 
         self.diccionarDatos = {
-            1: ":/Ejercicios/spiderman.jpg",
-            2: ":/Ejercicios/superman.jpg",
+            1: ":/Ejercicios/zero.jpg",
+            2: ":/Ejercicios/one.jpg",
         }
 
         self.cambiaValor()
@@ -56,6 +62,45 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.msj("1")
             else:
                     self.msj("1")
+        if boton_presionado == self.btn_nand:
+            if indice == 1 & indice2 == 1:
+                self.msj("1")
+            elif indice == 2 & indice2 == 2:
+                self.msj("0")
+            else:
+                    self.msj("1")
+        if boton_presionado == self.btn_nor:
+            if indice == 1 & indice2 == 1:
+                self.msj("1")
+            elif indice == 2 & indice2 == 2:
+                self.msj("0")
+            else:
+                    self.msj("0")
+        if boton_presionado == self.btn_xor:
+            if indice == 1 & indice2 == 1:
+                self.msj("0")
+            elif indice == 2 & indice2 == 2:
+                self.msj("0")
+            else:
+                    self.msj("1")
+        if boton_presionado == self.btn_xnor:
+            if indice == 1 & indice2 == 1:
+                self.msj("1")
+            elif indice == 2 & indice2 == 2:
+                self.msj("1")
+            else:
+                    self.msj("0")
+        if boton_presionado == self.btn_notA:
+            if indice == 1:
+                self.msj("1")
+            else:
+                self.msj("0")
+        if boton_presionado == self.btn_notB:
+            if indice2 == 1:
+                self.msj("1")
+            else:
+                self.msj("0")
+
 
     def msj(self, txt):
         m = QtWidgets.QMessageBox()

@@ -9,6 +9,8 @@
     <file>Finalizada.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
+    <file>zero.jpg</file>
+    <file>one.jpg</file>
     <file>amarillo.png</file>
     <file>rojo.png</file>
     <file>verde.png</file>

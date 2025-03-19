@@ -117,7 +117,7 @@ background-color: rgb(137, 230, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/spiderman.jpg</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/zero.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -136,7 +136,7 @@ background-color: rgb(137, 230, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/spiderman.jpg</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/zero.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -226,7 +226,7 @@ background-color: rgb(137, 230, 255);</string>
     <property name="geometry">
      <rect>
       <x>1080</x>
-      <y>300</y>
+      <y>250</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -243,7 +243,7 @@ background-color: rgb(137, 230, 255);</string>
     <property name="geometry">
      <rect>
       <x>1080</x>
-      <y>400</y>
+      <y>340</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -255,11 +255,11 @@ background-color: rgb(137, 230, 255);</string>
      <string>XNOR</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_not">
+   <widget class="QPushButton" name="btn_notA">
     <property name="geometry">
      <rect>
       <x>1080</x>
-      <y>480</y>
+      <y>430</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -268,7 +268,23 @@ background-color: rgb(137, 230, 255);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>NOT</string>
+     <string>NOT A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_notB">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>NOT B</string>
     </property>
    </widget>
   </widget>
