@@ -33,7 +33,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -55,7 +55,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -77,7 +77,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -192,6 +192,25 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Numero 3:</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="txt_num3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>400</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -207,6 +226,8 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
  </widget>
  <resources>
   <include location="../Archivos/Resources/resource.qrc"/>
+  <include location="../../Archivos/Resources/resource.qrc"/>
+  <include location="../../../Archivos/Resources/resource.qrc"/>
  </resources>
  <connections/>
 </ui>

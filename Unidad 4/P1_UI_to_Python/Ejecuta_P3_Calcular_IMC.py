@@ -17,12 +17,6 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
             altura = float (self.txt_altura.text())
             peso = float(self.txt_peso.text())
 
-
-
-
-
-
-
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     window= MyApp()
