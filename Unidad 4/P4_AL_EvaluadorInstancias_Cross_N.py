@@ -24,7 +24,7 @@ for i in range(Y.shape[1]):
     clase_indices[clase].append(i)
 
 # === Mezclar e insertar en segmentos ===
-ns = 5  # Número de folds deseado
+ns = 9  # Número de folds deseado
 segmentos = [[] for _ in range(ns)]
 for clase in clase_indices:
     indices = clase_indices[clase]
