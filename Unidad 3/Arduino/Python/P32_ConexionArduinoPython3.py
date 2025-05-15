@@ -18,7 +18,7 @@ print(datos)
 from matplotlib import pyplot as plt
 x = [i for i in range(len(datos))]
 plt.plot(x, datos, color='fuchsia')
-plt.title("P36 Gráfica de Datos Arduino")
+plt.title("P32 Gráfica de Datos Arduino")
 plt.show()
 
 
