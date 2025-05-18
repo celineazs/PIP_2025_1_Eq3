@@ -21,5 +21,5 @@ valores_y = [eval(y) for x in valores_x]
 print(valores_y)
 
 from matplotlib import pyplot as plt
-plt.plot(valores_x, valores_y)
+plt.plot(valores_x, valores_y,color='green')
 plt.show()

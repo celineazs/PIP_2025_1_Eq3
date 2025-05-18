@@ -13,7 +13,7 @@ class MyDialog(QtWidgets.QDialog, Ui_dialog):
         self.setupUi(self)
 
         # Área de los Signals / Configuracion
-        self.txt_com.setText("/dev/cu.usbmodem21201")
+        self.txt_com.setText("COM3")
         self.btn_accion.clicked.connect(self.accion)
 
         self.principal = referencia_a_main

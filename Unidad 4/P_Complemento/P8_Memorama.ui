@@ -7,18 +7,21 @@
     <x>0</x>
     <y>0</y>
     <width>569</width>
-    <height>415</height>
+    <height>543</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(186, 255, 170);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
+      <x>20</x>
+      <y>130</y>
       <width>261</width>
       <height>121</height>
      </rect>
@@ -55,8 +58,8 @@
    <widget class="QLabel" name="img1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>20</y>
+      <x>20</x>
+      <y>140</y>
       <width>171</width>
       <height>141</height>
      </rect>
@@ -65,7 +68,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Ejercicios/ImagenGatoEuropeo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/chimmy.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -74,11 +77,14 @@
    <widget class="QPushButton" name="btn_validar">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>20</y>
+      <x>400</x>
+      <y>140</y>
       <width>141</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>VALIDAR</string>
@@ -87,8 +93,8 @@
    <widget class="QLabel" name="img2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>20</y>
+      <x>210</x>
+      <y>140</y>
       <width>171</width>
       <height>141</height>
      </rect>
@@ -97,7 +103,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Ejercicios/ImagenGatoEuropeo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/chimmy.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -106,8 +112,8 @@
    <widget class="QLabel" name="img3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>180</y>
+      <x>20</x>
+      <y>300</y>
       <width>171</width>
       <height>141</height>
      </rect>
@@ -116,7 +122,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Ejercicios/ImagenGatoEuropeo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/chimmy.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -125,8 +131,8 @@
    <widget class="QLabel" name="img4">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>180</y>
+      <x>210</x>
+      <y>300</y>
       <width>171</width>
       <height>141</height>
      </rect>
@@ -135,7 +141,73 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../../Archivos/Recursos.qrc">:/Ejercicios/ImagenGatoEuropeo.png</pixmap>
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/Ejercicios/chimmy.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>400</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -148,7 +220,7 @@
      <x>0</x>
      <y>0</y>
      <width>569</width>
-     <height>37</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
@@ -156,6 +228,7 @@
  </widget>
  <resources>
   <include location="../../Archivos/Recursos.qrc"/>
+  <include location="../../Archivos/Resources/resource.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -18,9 +18,9 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def clicImage(self):
         print("Hiciste clic")
-        self.txt_Nombre.setText("Paco")
-        self.txt_Edad.setText("6")
-        self.txt_Ocupacion.setText("Asesino")
+        self.txt_Nombre.setText("Jungkook")
+        self.txt_Edad.setText("27")
+        self.txt_Ocupacion.setText("Idol")
 
     def borrar(self):
         self.txt_Nombre.setText("")

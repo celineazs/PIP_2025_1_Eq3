@@ -6,19 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>862</width>
-    <height>496</height>
+    <width>920</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>0</y>
+      <x>30</x>
+      <y>110</y>
       <width>501</width>
       <height>441</height>
      </rect>
@@ -28,8 +31,8 @@
    <widget class="QPushButton" name="btn_action">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>10</y>
+      <x>550</x>
+      <y>120</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -37,8 +40,12 @@
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>INICIAR</string>
@@ -47,17 +54,21 @@
    <widget class="QPushButton" name="btn_arriba">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>170</y>
-      <width>81</width>
+      <x>680</x>
+      <y>280</y>
+      <width>91</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ARRIBA</string>
@@ -66,17 +77,21 @@
    <widget class="QPushButton" name="btn_izquierda">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>220</y>
-      <width>91</width>
+      <x>540</x>
+      <y>330</y>
+      <width>131</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>IZQUIERDA</string>
@@ -85,8 +100,8 @@
    <widget class="QPushButton" name="btn_abajo">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>260</y>
+      <x>680</x>
+      <y>380</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -94,8 +109,12 @@
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>ABAJO</string>
@@ -104,17 +123,23 @@
    <widget class="QPushButton" name="btn_derecha">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>220</y>
-      <width>91</width>
+      <x>780</x>
+      <y>330</y>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
     </property>
     <property name="text">
      <string>DERECHA</string>
@@ -123,8 +148,8 @@
    <widget class="QPushButton" name="btn_centro">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>220</y>
+      <x>680</x>
+      <y>330</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -132,8 +157,13 @@
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+</string>
     </property>
     <property name="text">
      <string>CENTRO</string>
@@ -142,16 +172,20 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>60</y>
+      <x>560</x>
+      <y>170</y>
       <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Tiempo:</string>
@@ -160,16 +194,22 @@
    <widget class="QLabel" name="txt_tiempo">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>60</y>
+      <x>620</x>
+      <y>170</y>
       <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -178,19 +218,87 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>10</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>470</y>
+      <width>121</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>862</width>
-     <height>24</height>
+     <width>920</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Archivos/Resources/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

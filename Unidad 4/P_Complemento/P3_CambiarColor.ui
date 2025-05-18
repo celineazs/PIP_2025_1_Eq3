@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>718</width>
-    <height>289</height>
+    <width>684</width>
+    <height>447</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>10</y>
+      <x>40</x>
+      <y>100</y>
       <width>58</width>
       <height>16</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QSlider" name="valorR">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>70</y>
+      <x>60</x>
+      <y>160</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QSlider" name="valorG">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>130</y>
+      <x>60</x>
+      <y>220</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -56,8 +56,8 @@
    <widget class="QSlider" name="valorB">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>180</y>
+      <x>60</x>
+      <y>270</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -69,8 +69,8 @@
    <widget class="QLineEdit" name="txt_R">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>70</y>
+      <x>290</x>
+      <y>160</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -79,8 +79,8 @@
    <widget class="QLineEdit" name="txt_G">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>130</y>
+      <x>290</x>
+      <y>220</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -89,8 +89,8 @@
    <widget class="QLineEdit" name="txt_B">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>180</y>
+      <x>290</x>
+      <y>270</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -99,8 +99,8 @@
    <widget class="QLabel" name="color">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>50</y>
+      <x>400</x>
+      <y>140</y>
       <width>251</width>
       <height>141</height>
      </rect>
@@ -112,19 +112,87 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>20</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>300</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>718</width>
-     <height>24</height>
+     <width>684</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Archivos/Resources/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

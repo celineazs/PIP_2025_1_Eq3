@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>775</width>
-    <height>357</height>
+    <width>866</width>
+    <height>468</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>30</y>
-      <width>351</width>
+      <x>190</x>
+      <y>120</y>
+      <width>391</width>
       <height>41</height>
      </rect>
     </property>
@@ -34,9 +34,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>20</y>
-      <width>81</width>
+      <x>50</x>
+      <y>110</y>
+      <width>141</width>
       <height>51</height>
      </rect>
     </property>
@@ -54,9 +54,9 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>80</y>
-      <width>141</width>
+      <x>160</x>
+      <y>180</y>
+      <width>121</width>
       <height>51</height>
      </rect>
     </property>
@@ -74,9 +74,9 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>160</y>
-      <width>141</width>
+      <x>180</x>
+      <y>260</y>
+      <width>101</width>
       <height>51</height>
      </rect>
     </property>
@@ -94,8 +94,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>-10</y>
+      <x>600</x>
+      <y>80</y>
       <width>161</width>
       <height>81</height>
      </rect>
@@ -114,8 +114,8 @@
    <widget class="QLineEdit" name="txt_nombre">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>80</y>
+      <x>290</x>
+      <y>180</y>
       <width>291</width>
       <height>51</height>
      </rect>
@@ -124,8 +124,8 @@
    <widget class="QLineEdit" name="txt_indice">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>160</y>
+      <x>290</x>
+      <y>260</y>
       <width>291</width>
       <height>51</height>
      </rect>
@@ -134,8 +134,8 @@
    <widget class="QLineEdit" name="txt_totalElementos">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>90</y>
+      <x>620</x>
+      <y>180</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -154,8 +154,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>230</y>
+      <x>200</x>
+      <y>330</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -174,11 +174,77 @@
    <widget class="QLineEdit" name="txt_data">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>240</y>
+      <x>290</x>
+      <y>340</y>
       <width>291</width>
       <height>51</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>10</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>330</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -187,13 +253,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>775</width>
-     <height>24</height>
+     <width>866</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Archivos/Resources/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

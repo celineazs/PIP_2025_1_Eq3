@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>596</width>
-    <height>363</height>
+    <height>359</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/log_uat_nuevo.png</pixmap>
+    <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/log_uat_nuevo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -51,7 +51,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="../../Archivos/Recursos.qrc">:/Logos/FIT_logo_vertical.png</pixmap>
+    <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/FIT_logo_vertical.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -69,6 +69,7 @@
    <property name="font">
     <font>
      <pointsize>24</pointsize>
+     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -77,7 +78,7 @@
 border-radius: 15px;</string>
    </property>
    <property name="text">
-    <string>/dev/cu.usbmodem11301</string>
+    <string>COM3</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -88,13 +89,14 @@ border-radius: 15px;</string>
     <rect>
      <x>30</x>
      <y>160</y>
-     <width>151</width>
-     <height>31</height>
+     <width>291</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>24</pointsize>
+     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -114,6 +116,7 @@ border-radius: 15px;</string>
    <property name="font">
     <font>
      <pointsize>20</pointsize>
+     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -121,10 +124,33 @@ border-radius: 15px;</string>
     <string>CONECTAR</string>
    </property>
   </widget>
+  <widget class="QLabel" name="imagen_3">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>260</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../Archivos/Resources/resource.qrc">:/logos/equipo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="../../Archivos/Recursos.qrc"/>
   <include location="../../../../../../../../Archivos/Recursos.qrc"/>
+  <include location="../../Archivos/Resources/resource.qrc"/>
  </resources>
  <connections/>
 </ui>

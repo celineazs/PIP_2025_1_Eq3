@@ -225,7 +225,6 @@ border-radius:20px;</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../Archivos/Resources/resource.qrc"/>
   <include location="../../Archivos/Resources/resource.qrc"/>
   <include location="../../../Archivos/Resources/resource.qrc"/>
  </resources>
