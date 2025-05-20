@@ -1,4 +1,4 @@
-const int leds[] = {9, 8, 7, 6, 5, 4, 3, 2}; 
+rconst int leds[] = {9, 8, 7, 6, 5, 4, 3, 2}; 
 int numero; 
 
 void setup() {
